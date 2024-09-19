@@ -9,51 +9,9 @@
     background-color: rgba(79, 69, 49, 0.1);
   }
   
-  @media (max-width: 1024px) {
-    nav {
-      flex-direction: column;
-      height: auto;
-    }
-  
-    .links a {
-      display: block;
-      margin: 10px 0;
-    }
-  
-    .about-me {
-      flex-direction: column;
-      padding: 10px;
-    }
-  
-    .about-me .image img {
-      width: 300px;
-      margin-top: 20px;
-    }
-  
-    .skill {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .project1, .project2, .project3 {
-      width: 90%;
-      margin: 20px auto;
-    }
-  
-    .task {
-      position: relative;
-      transform: translateY(0);
-      left: auto;
-      width: 90%;
-      margin: 20px auto;
-    }
-  }
-  
-  
   a {
     text-decoration: none;
   }
-  
   
   nav {
     display: flex;
@@ -63,7 +21,7 @@
     border: 2px solid gray;
     background-color: rgb(88, 81, 81);
     margin: 30px;
-    text-align: center;
+    text-align: c enter;
     border-radius: 25px;
   }
   
@@ -97,7 +55,8 @@
     border-radius: 50%;
   
   }
-  
+
+  /* section1 */    
   .about-me {
     background-color:rgb(93, 126, 133);
     width: 96%;
