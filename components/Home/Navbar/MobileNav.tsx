@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { motion } from "framer-motion";
 import { NavLinks } from "@/constant/constant";
 import { CgClose } from "react-icons/cg";
 
