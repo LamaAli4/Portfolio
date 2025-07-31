@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { NavLinks } from "@/constant/constant";
 import { BiDownload } from "react-icons/bi";
 import { FaCode } from "react-icons/fa";
@@ -23,10 +24,13 @@ const Nav = ({ openNav }: props) => {
   }, []);
 
   return (
-    <div
-      className={`transition-all ${
-        navBg ? "bg-[#0f142ed9] shadow-md" : "fixed"
-      } duration-200 h-[12vh] z-[10000] fixed w-full`}
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className={`transition-all duration-200 h-[12vh] z-[10000] fixed w-full ${
+        navBg ? "bg-[#0f142ed9] shadow-md" : ""
+      }`}
     >
       <div className="flex items-center h-full justify-between w-[90%] mx-auto">
         {/* LOGO */}
@@ -72,7 +76,7 @@ const Nav = ({ openNav }: props) => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
