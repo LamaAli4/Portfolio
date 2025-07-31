@@ -48,10 +48,12 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-5 text-sm px-4 text-center sm:text-2xl font-medium flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-1"
+          className="mt-5 px-4 text-center sm:text-2xl font-medium flex flex-wrap justify-center gap-x-2"
         >
-          <span>Hi! I&apos;m Lama Emad Alshaikh ALi – A passionate</span>
-          <span className="text-cyan-200 font-bold">
+          <span className="whitespace-nowrap">
+            Hi! I&apos;m Lama Emad Alshaikh ALi – A passionate
+          </span>
+          <span className="text-cyan-200 font-bold whitespace-nowrap">
             <Typewriter
               options={{
                 strings: ["Frontend Developer", "Web Developer"],
