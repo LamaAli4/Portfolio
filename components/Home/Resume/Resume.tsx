@@ -50,7 +50,7 @@ const Resume = () => {
           viewport={{ once: true }}
         >
           <h1 className="text-3xl sm:text-4xl font-bold text-white">
-            My <span className="text-cyan-200">Education</span>
+            My <span className="text-cyan-200">Educations</span>
           </h1>
           <div className="mt-10">
             <ResumeCard
@@ -61,12 +61,12 @@ const Resume = () => {
             />
             <ResumeCard
               Icon={SiJavascript}
-              role="Web Development Prep – Gaza Sky Geeks"
+              role="Web Development Prep Course – Gaza Sky Geeks"
               date="2024"
               description="60-hour program covering HTML, CSS, JavaScript fundamentals, version control, and soft skills."
             />
             <ResumeCard
-              Icon={SiJavascript}
+              Icon={FaReact}
               role="React & Next.js Course – Gaza Sky Geeks"
               date="2025"
               description="90-hour advanced training covering real-world projects using React, Next.js, TypeScript, and Git."
