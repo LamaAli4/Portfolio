@@ -8,7 +8,10 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen flex items-center justify-center text-white overflow-hidden flex-col">
+    <div
+      id="home"
+      className="relative h-screen flex items-center justify-center text-white overflow-hidden flex-col"
+    >
       <ParticlesHero />
 
       <motion.div

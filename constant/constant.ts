@@ -17,13 +17,13 @@ export const NavLinks = [
     },
     {
         id: 2,
-        url: "#",
+        url: "#services",
         label: "Services",
         icon: AiOutlineAppstore,
     },
     {
         id: 3,
-        url: "#",
+        url: "#resume",
         label: "Resume",
         icon: AiOutlineFileText,
     },

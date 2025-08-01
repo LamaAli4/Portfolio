@@ -14,9 +14,9 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-center text-3xl md:text-4xl xl:text-5xl font-bold text-white leading-tight mb-16"
         >
-          Collaborate with brand <br />
-          and agencies to create <br />
-          impactful results
+          Collaborate with teams <br />
+          and clients to craft <br />
+          modern digital products
         </motion.h1>
 
         <motion.div
