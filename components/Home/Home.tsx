@@ -4,6 +4,7 @@ import Services from "./Services/Services";
 import Resume from "./Resume/Resume";
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
+import Contact from "./Contact/Contact";
 
 
 const Home = () => {
@@ -27,6 +28,10 @@ const Home = () => {
 
       <section id="skills">
         <Skills />
+      </section>
+
+      <section id="contact">
+        <Contact />
       </section>
     </div>
   );
