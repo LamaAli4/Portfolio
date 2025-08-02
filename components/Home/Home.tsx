@@ -5,7 +5,7 @@ import Resume from "./Resume/Resume";
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
 import Contact from "./Contact/Contact";
-
+import Footer from "./Footer/Footer";
 
 const Home = () => {
   return (
@@ -33,6 +33,7 @@ const Home = () => {
       <section id="contact">
         <Contact />
       </section>
+
     </div>
   );
 };

@@ -25,9 +25,15 @@ const Nav = ({ openNav }: props) => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      initial={{ opacity: 0, y: -30, scale: 0.95 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{
+        type: "spring",
+        mass: 0.5,
+        damping: 15,
+        stiffness: 70,
+        delay: 0.1,
+      }}
       className={`transition-all duration-200 h-[12vh] z-[10000] fixed w-full ${
         navBg ? "bg-[#0f142ed9] shadow-md" : ""
       }`}
@@ -62,13 +68,15 @@ const Nav = ({ openNav }: props) => {
 
         {/* buttons */}
         <div className="flex items-center space-x-4">
-          <button
+          <a
+            href="/Lama Alshaikh Ali CV ATS.pdf"
+            download
             className="px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-900
              transition-all duration-300 text-white flex items-center space-x-2"
           >
             <BiDownload className="w-5 h-5" />
             <span>Download CV</span>
-          </button>
+          </a>
           {/* Burger Menu */}
           <HiBars3BottomRight
             onClick={openNav}
