@@ -31,7 +31,7 @@ const projects = [
   {
     title: "Crop Management App",
     description: "Frontend dashboard for managing crop data.",
-    image: "/images/p3.jpg",
+    image: "/images/p7.png",
     url: "#",
     tags: "React , Dashboard",
   },

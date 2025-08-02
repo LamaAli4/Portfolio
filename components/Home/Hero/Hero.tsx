@@ -7,13 +7,6 @@ import ParticlesHero from "./ParticleBackground";
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  const handleScroll = () => {
-    const section = document.getElementById("projects");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div
       id="home"
@@ -77,18 +70,15 @@ const Hero = () => {
           </span>
         </motion.h2>
 
-        {/* Button */}
-        <motion.button
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 1 }}
+        {/* Button with Link */}
+        <motion.a
+          href="#projects" 
           className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer
          rounded-full text-lg font-medium flex items-center"
-          onClick={handleScroll}
         >
           <span>See My Work</span>
           <BsArrowRight className="w-5 h-5 ml-2" />
-        </motion.button>
+        </motion.a>
       </motion.div>
     </div>
   );
