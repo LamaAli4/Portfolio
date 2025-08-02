@@ -39,13 +39,37 @@ const Contact = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  const validateForm = () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{3,}$/;
+    const phoneRegex = /^[0-9]{10,15}$/;
+
+    if (!emailRegex.test(form.email)) {
+      toast.error("Please enter a valid email address");
+      return false;
+    }
+
+    if (!phoneRegex.test(form.phone)) {
+      toast.error(" Please enter a valid phone number (numbers only)");
+      return false;
+    }
+
+    if (form.message.trim().length < 40) {
+      toast.error("Message must be at least 40 characters");
+      return false;
+    }
+
+    return true;
+  };
+
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!validateForm()) return;
 
     emailjs
       .send("service_r1jpi9h", "template_7oda0df", form, "JjOU5kLNvmFlOplbY")
       .then(() => {
-        toast.success(" Message sent successfully!");
+        toast.success("Message sent successfully!");
         setForm({
           name: "",
           email: "",
