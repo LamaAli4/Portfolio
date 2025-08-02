@@ -18,7 +18,7 @@ const projects = [
     title: "Personal Portfolio",
     description: "Responsive portfolio built using Next.js and Tailwind CSS.",
     image: "/images/p6.jpg",
-    url: "https://your-portfolio.vercel.app/",
+    url: "https://portfolio-khaki-psi-12.vercel.app/",
     tags: "Next.js , React Component , Tailwind , Portfolio",
   },
   {
