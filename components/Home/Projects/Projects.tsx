@@ -8,31 +8,32 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "Team Work Platform",
-    description: "Full-stack freelance dashboard built with Next.js.",
+    description:
+      "freelance Website for provider built with Next.js and React Components.",
     image: "/images/p1.jpg",
     url: "https://www.team-work.co/",
-    tags: "Dashboard , Freelance",
+    tags: "Dashboard , Freelance, Next.js , React Components ",
   },
   {
     title: "Personal Portfolio",
     description: "Responsive portfolio built using Next.js and Tailwind CSS.",
-    image: "/images/p1.jpg",
+    image: "/images/p6.jpg",
     url: "https://your-portfolio.vercel.app/",
     tags: "Next.js , React Component , Tailwind , Portfolio",
   },
   {
     title: "Contracts Platform",
     description: "Contract web platform using React for frontend.",
-    image: "/images/p2.jpg",
-    url: "https://ooqood.com/",
-    tags: "React , Dashboard",
+    image: "/images/p5.jpg",
+    url: "#",
+    tags: "React",
   },
   {
     title: "Crop Management App",
     description: "Frontend dashboard for managing crop data.",
     image: "/images/p3.jpg",
     url: "#",
-    tags: "React , Agriculture",
+    tags: "React , Dashboard",
   },
   {
     title: "Book Library",
