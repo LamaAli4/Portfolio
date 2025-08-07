@@ -14,6 +14,7 @@ const projects = [
     url: "https://www.team-work.co/",
     tags: "Dashboard , Freelance, Next.js , React Components ",
   },
+  
   {
     title: "Personal Portfolio",
     description: "Responsive portfolio built using Next.js and Tailwind CSS.",
@@ -21,6 +22,16 @@ const projects = [
     url: "https://portfolio-khaki-psi-12.vercel.app/",
     tags: "Next.js , React Component , Tailwind , Portfolio",
   },
+
+  {
+    title: "Simple Blog Homepage",
+    description:
+      "A sleek and modern blog homepage built with Next.js 15, Tailwind CSS v4, Shadcn UI, and motion.dev for smooth animations.",
+    image: "/images/blog.png",
+    url: "https://blog-project-ten-theta.vercel.app/",
+    tags: "Next.js , Tailwind CSS , Shadcn UI , Motion.dev , Dark/Light Theme",
+  },
+
   {
     title: "Contracts Platform",
     description: "Contract web platform using React for frontend.",
